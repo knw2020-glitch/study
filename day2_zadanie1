@@ -1,0 +1,21 @@
+#zadanie 1
+
+def stats_decorator(func):
+    call_count = 0          # licznik wywołań
+    total_sum = 0           # suma zwracanych wyników
+
+    def wrapper(*args, **kwargs):
+        nonlocal call_count, total_sum   # pozwala zmieniać zmienne z zewnętrznego scope
+        call_count += 1
+
+        result = func(*args, **kwargs)   # wywołanie dekorowanej funkcji
+
+        # Jeśli wynik jest liczbą — dodajemy do sumy
+        if isinstance(result, (int, float)):
+            total_sum += result
+
+        print(f"[CALL #{call_count}] {func.__name__}{args} -> {result} | total={total_sum}")
+
+        return result   # ważne! zwracamy oryginalny wynik
+
+    return wrapper
