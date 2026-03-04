@@ -1,0 +1,10 @@
+utwórz program w którym będziesz podawał z klawiatury liczbę punktów ze sprawdzianu.
+Program powinien wyświetlić ocenę jaka Ci sie należy
+
+100 - 90 -> 5
+89  -80  -> 4
+79 - 70 -> 3
+69 -60  -> 2
+59-0   -> 1
+
+Jeśli podasz liczbę mnijeszą od 0 lub większą od 100 to komunikat , ze błąd.
