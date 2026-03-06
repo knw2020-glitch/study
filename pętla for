@@ -1,0 +1,103 @@
+# Co to jest pętla for
+# Zrób coś wiele razy — ale nie muszę pisać tego wiele razy!
+
+# wyświetl 5 razy taki sam tekst
+
+for i in range(5):
+    print("gram w koszykówkę")
+
+# WYJAŚNIENIE    
+#      for i in range(5):
+#  Python robi tak:
+#  weź liczby: 0, 1, 2, 3, 4
+#  za KAŻDĄ z nich wykonaj polecenie w środku pętli
+# Dlatego wykona to 5 razy.
+# "i" to pudełko, w którym Python trzyma kolejną liczbę.
+
+
+# Zadanie 1
+# Wypisz liczby od 1 do 10:
+
+for i in range(1, 11):
+    print(i)
+
+# Zadanie 2
+# Wypisz „Python jest super!” 3 razy:
+
+for i in range(3):
+    print("Python jest super!")
+
+# zadanie 3
+# prosta gra w odliczanie    
+
+print("Start za...")
+
+for i in range(5, 0, -1):
+    print(i)
+    
+print("GO!")
+
+# jeśli chciałbyś, zeby liczby pojawiały się powoli to trzeba użyć funkcji tiem.sleep() -> w nawiasie wpisujesz sekundy ile ma spać
+# aby funkcja sleep działała, trzeba wczytać moduł time.
+# moduły wczytujmey -> import time -> wszystkie potrzebne moduły wczytujemy na początku pliku
+
+import time
+
+for i in range(5, 0, -1):
+    print(i)
+    time.sleep(2)   #usypia na 2 sekundy
+print("GO!")
+
+
+# Zadanie 4
+# wypisać liczby parzyste od 0 do 20
+# Wskazówka: liczba parzysta ma resztę 0 z dzielenia przez 2.
+
+for i in range(1, 21):
+    if i % 2 == 0:
+        print(i)
+
+ # wyjasnienie  if i % 2 == 0:   ->  reszta z dzielenia przez 2 równa sie 0      
+
+
+# LISTA
+# Lista jest po to, żeby trzymać wiele rzeczy naraz. 
+# zliczanie elementów z listy
+# np lista kolory:  kolory = ["czerwony", "zielony", "niebieski"]
+# każdy element w liście ma swój numer liczony od 0   (czyli u nas 0,1,2)
+# np. print(kolory[1])   wyświetli kolor "zielony"
+# np. print(kolory[0])   wyświetli kolor "czerwony"
+
+kolory = ["czerwony", "zielony", "niebieski"]
+print(kolory[1])
+
+# wszystkie kolory z listy wypisze:
+
+kolory = ["czerwony", "zielony", "niebieski"]
+
+for kolor in kolory:
+    print(kolor)
+    
+# ZADANIE
+# Suma punktów z listy
+# wskazówka, na poczatku zerujemy zmienną w której przechowyjemy punkty, zeby przy kolejnym uruchomieniu była pusta.
+
+punkty = [5, 8, 10, 7, 9]
+
+suma = 0
+for p in punkty:
+    suma += p       #  ->  w skrócie jest to zapis który oznacza       suma = suma + p
+print("Suma:", suma)
+
+
+
+# ZADANIE na pętle for DLA CIEBIE (bez wykorzystania listy)
+# wypisz tabliczkę mnożenia tylko dla liczby 5 (od 1 do 10).
+
+Powodzenia ! :)
+
+
+
+
+
+    
